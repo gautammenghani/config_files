@@ -91,8 +91,12 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- shortcuts for tab navigation
+vim.keymap.set('n', '<C-Left>', '<cmd>tabprevious<CR>', { desc = 'Move to prev tab' })
+vim.keymap.set('n', '<C-Right>', '<cmd>tabnext<CR>', { desc = 'Move to next tab' })
+
 -- shortcut for new tab
-vim.keymap.set('n', '<leader>nt', '<cmd>tabnew<CR>', { desc = 'Open new tab' })
+vim.keymap.set('n', '<C-n>', '<cmd>tabnew<CR>', { desc = 'Open new tab' })
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info

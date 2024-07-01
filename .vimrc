@@ -11,15 +11,13 @@ highlight Comment ctermfg=green
 set tags+=tags;$HOME
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+map <C-left> :tabp<cr>
+map <C-right> :tabn<cr>
 
 " fzf
 nnoremap <C-f> :FZF<CR>
 
-" YCM
-nmap <leader>f <Plug>(YCMFindSymbolInWorkspace)
-
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'ycm-core/YouCompleteMe'
 call plug#end()

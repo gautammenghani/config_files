@@ -6,7 +6,6 @@ set number
 set expandtab
 set hlsearch
 set ruler
-set mouse=a
 highlight Comment ctermfg=green
 set tags+=tags;$HOME
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>

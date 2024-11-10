@@ -3,7 +3,6 @@ set tabstop=8
 set shiftwidth=8
 set ai
 set number
-set expandtab
 set hlsearch
 set ruler
 set signcolumn=no

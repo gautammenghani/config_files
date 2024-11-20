@@ -7,7 +7,7 @@ set hlsearch
 set ruler
 set signcolumn=no
 set nocompatible
-set mouse=n
+set hidden
 filetype plugin on
 set path+=**
 set wildmenu

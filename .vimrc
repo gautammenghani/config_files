@@ -13,6 +13,8 @@ set path+=**
 set wildmenu
 highlight Comment ctermfg=green
 set tags+=tags;$HOME
+set splitbelow
+set splitright
 
 " mappings
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>

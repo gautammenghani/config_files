@@ -28,8 +28,8 @@ ab gg grep -Irn
 ab bb buffer
 
 " highlight spaces
-highlight TrailingAndLeadingWhitespaces ctermbg=red
-match TrailingAndLeadingWhitespaces /\s\s*$\|^\s\s*/
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 call plug#begin()
 Plug 'tpope/vim-fugitive'

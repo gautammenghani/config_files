@@ -23,8 +23,12 @@ map <C-right> :tabn<cr>
 map <C-up> :bp<cr>
 map <C-down> :bn<cr>
 
+" command abbrev
+ca ln lne
+
 " aliases
 ab gg grep -Irn
+ab lgg lgrep -Irn
 ab bb buffer
 
 " highlight spaces

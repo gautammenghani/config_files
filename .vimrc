@@ -22,6 +22,8 @@ map <C-left> :tabp<cr>
 map <C-right> :tabn<cr>
 map <C-up> :bp<cr>
 map <C-down> :bn<cr>
+map <A-up> :lp<cr>
+map <A-down> :lne<cr>
 
 " command abbrev
 ca ln lne

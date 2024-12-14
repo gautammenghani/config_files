@@ -38,5 +38,5 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 call plug#begin()
-Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-fugitive'
 call plug#end()

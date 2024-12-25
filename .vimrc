@@ -16,6 +16,9 @@ set tags+=tags;$HOME
 set splitbelow
 set splitright
 
+" set grep to use rg
+set grepprg=rg\ --vimgrep
+
 " mappings
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 map <C-left> :tabp<cr>
@@ -26,11 +29,11 @@ map <A-up> :lp<cr>
 map <A-down> :lne<cr>
 
 " command abbrev
-ca ln lne
+ca ln lne 
 
 " aliases
-ab gg grep -Irn
-ab lgg lgrep -Irn
+ab gg grep
+ab lgg lgrep
 ab bb buffer
 
 " highlight spaces
@@ -38,5 +41,5 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 call plug#begin()
-	Plug 'tpope/vim-fugitive'
+        Plug 'tpope/vim-fugitive'
 call plug#end()

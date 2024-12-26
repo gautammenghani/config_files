@@ -36,6 +36,17 @@ ab gg grep
 ab lgg lgrep
 ab bb buffer
 
+" cscope
+nmap <Leader>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <Leader>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <Leader>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>a :cs find a <C-R>=expand("<cword>")<CR><CR>
+
 " highlight spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t/

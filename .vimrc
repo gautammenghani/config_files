@@ -50,7 +50,3 @@ nmap <Leader>a :cs find a <C-R>=expand("<cword>")<CR><CR>
 " highlight spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t/
-
-call plug#begin()
-        Plug 'tpope/vim-fugitive'
-call plug#end()

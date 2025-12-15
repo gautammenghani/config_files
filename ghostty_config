@@ -6,3 +6,4 @@ theme = Apple System Colors
 cursor-style-blink = false
 keybind = shift+left=previous_tab
 keybind = shift+right=next_tab
+copy-on-select = clipboard

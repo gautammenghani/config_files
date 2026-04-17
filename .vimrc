@@ -1,6 +1,7 @@
 syntax on
-set tabstop=8
-set shiftwidth=8
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set ai
 set number
 set hlsearch
@@ -15,6 +16,8 @@ highlight Comment ctermfg=green
 set tags+=tags;$HOME
 set splitbelow
 set splitright
+set exrc
+set mouse=n
 
 " set grep to use rg
 set grepprg=rg\ --vimgrep
@@ -27,6 +30,7 @@ map <C-up> :bp<cr>
 map <C-down> :bn<cr>
 map <A-up> :lp<cr>
 map <A-down> :lne<cr>
+nnoremap <leader>b :ls<CR>:b
 
 " command abbrev
 ca ln lne 
@@ -50,3 +54,6 @@ nmap <Leader>a :cs find a <C-R>=expand("<cword>")<CR><CR>
 " highlight spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+" lang specific settings
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4

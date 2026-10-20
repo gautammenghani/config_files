@@ -1,4 +1,6 @@
 (cua-mode t)
 (global-display-line-numbers-mode t)
 (global-set-key (kbd "C-f") 'isearch-forward)
+(global-set-key (kbd "C-S-f") 'rgrep)
 (define-key isearch-mode-map [(control f)] 'isearch-repeat-forward)
+(setq xref-search-program 'ripgrep)

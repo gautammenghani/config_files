@@ -4,3 +4,5 @@
 (global-set-key (kbd "C-S-f") 'rgrep)
 (define-key isearch-mode-map [(control f)] 'isearch-repeat-forward)
 (setq xref-search-program 'ripgrep)
+(global-set-key (kbd "C-h") 'replace-string)
+(global-set-key (kbd "C-c h") 'help-command)

@@ -10,7 +10,7 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (require 'eglot)
 
-;; Optionally, add hooks to automatically start eglot for your favorite modes:
+;; hooks to automatically start eglot:
 (add-hook 'c-mode-hook 'eglot-ensure)
 (add-hook 'c++-mode-hook 'eglot-ensure)
 
@@ -21,11 +21,5 @@
 (setq-default tab-width 4)
 (setq-default standard-indent 4)
 
-;; Set C/C++ default indentation to 4 spaces (when outside the Linux kernel)
+;; Set C/C++ default indentation to 4 spaces
 (setq-default c-basic-offset 4)
-
-(with-eval-after-load 'diff-mode
-  (set-face-attribute 'diff-added nil :background 'unspecified :foreground "#50fa7b")
-  (set-face-attribute 'diff-removed nil :background 'unspecified :foreground "#ff5555")
-  (set-face-attribute 'diff-refine-added nil :background 'unspecified :weight 'bold)
-  (set-face-attribute 'diff-refine-removed nil :background 'unspecified :weight 'bold))
